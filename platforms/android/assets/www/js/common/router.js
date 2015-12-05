@@ -4,7 +4,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     .state('app', {
         url: "/app",
         abstract: true,
-        templateUrl: "templates/sidebar-menu.html"
+        templateUrl: "templates/login.html"
     })
     //  login page
     .state('app.login', {

@@ -1,146 +1,241 @@
-[
-    {
-    	"_id": 1,	
-        "profileId": "PRF001",
-        "maskedName": "NIKPRF001",
-        "photo": "http://i12.photobucket.com/albums/a240/candid4world/candid/repository/profiles/PRF001/prof_1_zps6yygystr.jpg",
-        "specialization": "Cardio",
-        "experience": "5",
-        "location": "Bangalore",
-        "postedDate": "ddMMyyyyTHHmmss",
-        "readyToJobChange": "1",
-        "phone": "8123151567" 
-    },
-    {
-        "_id": 2,
-        "profileId": "PRF002",
-        "maskedName": "SURPRF002",
-        "photo": "http://i12.photobucket.com/albums/a240/candid4world/candid/repository/profiles/PRF002/prof_2_zpsb2maz3pq.jpg",
-        "specialization": "Ortho",
-        "experience": "4",
-        "location": "Bangalore",
-        "postedDate": "ddMMyyyyTHHmmss",
-        "readyToJobChange": "1",
-        "phone": "9916242412"
-    },
-    {
-        "_id": 3,
-        "profileId": "PRF003",
-        "maskedName": "RAKPRF003",
-        "photo": "http://1.bp.blogspot.com/-M0fdr0xWaaA/VYGjpZwTflI/AAAAAAAAA1I/f3sxnFuhMCc/s100-c/business-792113_1280.jpg",
-        "specialization": "ENT",
-        "experience": "2",
-        "location": "Bangalore",
-        "postedDate": "ddMMyyyyTHHmmss",
-        "readyToJobChange": "1",
-        "phone": "9916242123"
-    },
-    {
-        "_id": 4,
-       	"profileId": "PRF004",
-        "maskedName": "VENKPRF004",
-        "photo": "http://3.bp.blogspot.com/-bTWNRjookMQ/VYGjnv5nKtI/AAAAAAAAA08/wXshQ9sNDeU/s100-c/blank-792125_1280.jpg",
-        "specialization": "ENT",
-        "experience": "2",
-        "location": "Bangalore",
-        "postedDate": "ddMMyyyyTHHmmss",
-        "readyToJobChange": "0",
-        "phone": "9916242412"
-    },
-    {
-        "_id": 5,
-        "profileId": "PRF005",
-        "maskedName": "RESPRF005",
-        "photo": "http://2.bp.blogspot.com/-YytBQ-VwmQc/VYGjnsxx_yI/AAAAAAAAA04/uncM-5p5MbI/s100-c/board-761586_1280.jpg",
-        "specialization": "Ortho",
-        "experience": "1",
-        "location": "Chennai",
-        "postedDate": "ddMMyyyyTHHmmss",
-        "readyToJobChange": "1",
-        "phone": "9916212342"
-    },
-    {
-        "_id": 6,
-        "profileId": "PRF006",
-        "maskedName": "NIKPRF006",
-        "photo": "http://3.bp.blogspot.com/-bTWNRjookMQ/VYGjnv5nKtI/AAAAAAAAA08/wXshQ9sNDeU/s100-c/blank-792125_1280.jpg",
-        "specialization": "Skin",
-        "experience": "2.3",
-        "location": "Vaisak",
-        "postedDate": "ddMMyyyyTHHmmss",
-        "readyToJobChange": "1",
-        "phone": "9916242412"
-    },
-    {
-        "_id": 7,
-        "profileId": "PRF007",
-        "maskedName": "PRAPRF007",
-        "photo": "http://3.bp.blogspot.com/-bTWNRjookMQ/VYGjnv5nKtI/AAAAAAAAA08/wXshQ9sNDeU/s100-c/blank-792125_1280.jpg",
-        "specialization": "Ortho",
-        "experience": "4",
-        "location": "Bangalore",
-        "postedDate": "ddMMyyyyTHHmmss",
-        "readyToJobChange": "0",
-        "phone": "9916345671"
-    },
-    {
-        "_id": 8,
-        "profileId": "PRF008",
-        "maskedName": "TREPRF008",
-        "photo": "http://3.bp.blogspot.com/-bTWNRjookMQ/VYGjnv5nKtI/AAAAAAAAA08/wXshQ9sNDeU/s100-c/blank-792125_1280.jpg",
-        "specialization": "Ortho",
-        "experience": "2.4",
-        "location": "Dehli",
-        "postedDate": "ddMMyyyyTHHmmss",
-        "readyToJobChange": "1",
-        "phone": "9916123456"
-    },
-    {
-        "_id": 9,
-        "profileId": "PRF009",
-        "maskedName": "PAVPRF002",
-        "photo": "http://2.bp.blogspot.com/-YytBQ-VwmQc/VYGjnsxx_yI/AAAAAAAAA04/uncM-5p5MbI/s100-c/board-761586_1280.jpg",
-        "specialization": "ENT",
-        "experience": "2.2",
-        "location": "Bangalore",
-        "postedDate": "ddMMyyyyTHHmmss",
-        "readyToJobChange": "0",
-        "phone": "9916333333"
-    },
-    {
-        "_id": 10,
-        "profileId": "PRF0010",
-        "maskedName": "NIKPRF0010",
-        "photo": "http://3.bp.blogspot.com/-bTWNRjookMQ/VYGjnv5nKtI/AAAAAAAAA08/wXshQ9sNDeU/s100-c/blank-792125_1280.jpg",
-        "specialization": "ENT",
-        "experience": "2.7",
-        "location": "Karnataka",
-        "postedDate": "ddMMyyyyTHHmmss",
-        "readyToJobChange": "1",
-        "phone": "9916243214"
-    },
-    {
-        "_id": 11,
-        "profileId": "PRF002",
-        "maskedName": "NIRPRF002",
-        "photo": "http://3.bp.blogspot.com/-bTWNRjookMQ/VYGjnv5nKtI/AAAAAAAAA08/wXshQ9sNDeU/s100-c/blank-792125_1280.jpg",
-        "specialization": "Ortho",
-        "experience": "4.6",
-        "location": "Bangalore",
-        "postedDate": "ddMMyyyyTHHmmss",
-        "readyToJobChange": "1",
-        "phone": "9916242321"
-    },
-    {
-        "_id": 12,
-        "profileId": "PRF0012",
-        "maskedName": "NIKPRF0012",
-        "photo": "http://3.bp.blogspot.com/-bTWNRjookMQ/VYGjnv5nKtI/AAAAAAAAA08/wXshQ9sNDeU/s100-c/blank-792125_1280.jpg",
-        "specialization": "ENT",
-        "experience": "3.2",
-        "location": "Mangalore",
-        "postedDate": "ddMMyyyyTHHmmss",
-        "readyToJobChange": "0",
-        "phone": "9916222333"
-    }
-]
+[{
+	"_id": 1,
+	"profileId": "PRF001",
+	"maskedName": "NIKPRF001",
+	"photo": "http://i12.photobucket.com/albums/a240/candid4world/candid/repository/profiles/PRF001/prof_1_zps6yygystr.jpg",
+	"age": "25",
+	"specialization": "Cardio",
+	"department": "Cardio",
+	"designation": "Sr. Ward Attendent",
+	"salary": "25000",
+	"experience": "5",
+	"location": "Bangalore",
+	"postedDate": "ddMMyyyyTHHmmss",
+	"readyToJobChange": "1",
+	"phone": "8123151567",
+	"examsDetails": [{
+		"examName": "IELTS",
+		"yearOfPassing": "2015",
+		"result": "7"
+	}]
+}, {
+	"_id": 2,
+	"profileId": "PRF002",
+	"maskedName": "SURPRF002",
+	"photo": "http://i12.photobucket.com/albums/a240/candid4world/candid/repository/profiles/PRF002/prof_2_zpsb2maz3pq.jpg",
+	"age": "25",
+	"specialization": "Ortho",
+	"department": "Cardio",
+	"designation": "Sr. Ward Attendent",
+	"salary": "25000",
+	"experience": "4",
+	"location": "Bangalore",
+	"postedDate": "ddMMyyyyTHHmmss",
+	"readyToJobChange": "1",
+	"phone": "9916242412",
+	"examsDetails": [{
+		"examName": "IELTS",
+		"yearOfPassing": "2015",
+		"result": "7"
+	}]
+}, {
+	"_id": 3,
+	"profileId": "PRF003",
+	"maskedName": "RAKPRF003",
+	"photo": "http://1.bp.blogspot.com/-M0fdr0xWaaA/VYGjpZwTflI/AAAAAAAAA1I/f3sxnFuhMCc/s100-c/business-792113_1280.jpg",
+	"age": "25",
+	"specialization": "ENT",
+	"department": "Cardio",
+	"designation": "Sr. Ward Attendent",
+	"salary": "25000",
+	"experience": "2",
+	"location": "Bangalore",
+	"postedDate": "ddMMyyyyTHHmmss",
+	"readyToJobChange": "1",
+	"phone": "9916242123",
+	"examsDetails": [{
+		"examName": "IELTS",
+		"yearOfPassing": "2015",
+		"result": "7"
+	}]
+}, {
+	"_id": 4,
+	"profileId": "PRF004",
+	"maskedName": "VENKPRF004",
+	"photo": "http://3.bp.blogspot.com/-bTWNRjookMQ/VYGjnv5nKtI/AAAAAAAAA08/wXshQ9sNDeU/s100-c/blank-792125_1280.jpg",
+	"age": "25",
+	"specialization": "ENT",
+	"department": "Cardio",
+	"designation": "Sr. Ward Attendent",
+	"salary": "25000",
+	"experience": "2",
+	"location": "Bangalore",
+	"postedDate": "ddMMyyyyTHHmmss",
+	"readyToJobChange": "1",
+	"phone": "9916242412",
+	"examsDetails": [{
+		"examName": "IELTS",
+		"yearOfPassing": "2015",
+		"result": "7"
+	}]
+}, {
+	"_id": 5,
+	"profileId": "PRF005",
+	"maskedName": "RESPRF005",
+	"photo": "http://2.bp.blogspot.com/-YytBQ-VwmQc/VYGjnsxx_yI/AAAAAAAAA04/uncM-5p5MbI/s100-c/board-761586_1280.jpg",
+	"age": "25",
+	"specialization": "Ortho",
+	"department": "Cardio",
+	"designation": "Sr. Ward Attendent",
+	"salary": "25000",
+	"experience": "1",
+	"location": "Chennai",
+	"postedDate": "ddMMyyyyTHHmmss",
+	"readyToJobChange": "1",
+	"phone": "9916212342",
+	"examsDetails": [{
+		"examName": "IELTS",
+		"yearOfPassing": "2015",
+		"result": "7"
+	}]
+}, {
+	"_id": 6,
+	"profileId": "PRF006",
+	"maskedName": "NIKPRF006",
+	"photo": "http://3.bp.blogspot.com/-bTWNRjookMQ/VYGjnv5nKtI/AAAAAAAAA08/wXshQ9sNDeU/s100-c/blank-792125_1280.jpg",
+	"age": "25",
+	"specialization": "Skin",
+	"department": "Cardio",
+	"designation": "Sr. Ward Attendent",
+	"salary": "25000",
+	"experience": "2.3",
+	"location": "Vaisak",
+	"postedDate": "ddMMyyyyTHHmmss",
+	"readyToJobChange": "1",
+	"phone": "9916242412",
+	"examsDetails": [{
+		"examName": "IELTS",
+		"yearOfPassing": "2015",
+		"result": "7"
+	}]
+}, {
+	"_id": 7,
+	"profileId": "PRF007",
+	"maskedName": "PRAPRF007",
+	"photo": "http://3.bp.blogspot.com/-bTWNRjookMQ/VYGjnv5nKtI/AAAAAAAAA08/wXshQ9sNDeU/s100-c/blank-792125_1280.jpg",
+	"age": "25",
+	"specialization": "Ortho",
+	"department": "Cardio",
+	"designation": "Sr. Ward Attendent",
+	"salary": "25000",
+	"experience": "4",
+	"location": "Bangalore",
+	"postedDate": "ddMMyyyyTHHmmss",
+	"readyToJobChange": "0",
+	"phone": "9916345671",
+	"examsDetails": [{
+		"examName": "IELTS",
+		"yearOfPassing": "2015",
+		"result": "7"
+	}]
+}, {
+	"_id": 8,
+	"profileId": "PRF008",
+	"maskedName": "TREPRF008",
+	"photo": "http://3.bp.blogspot.com/-bTWNRjookMQ/VYGjnv5nKtI/AAAAAAAAA08/wXshQ9sNDeU/s100-c/blank-792125_1280.jpg",
+	"age": "25",
+	"specialization": "Ortho",
+	"department": "Cardio",
+	"designation": "Sr. Ward Attendent",
+	"salary": "25000",
+	"experience": "2.4",
+	"location": "Dehli",
+	"postedDate": "ddMMyyyyTHHmmss",
+	"readyToJobChange": "1",
+	"phone": "9916123456",
+	"examsDetails": [{
+		"examName": "IELTS",
+		"yearOfPassing": "2015",
+		"result": "7"
+	}]
+}, {
+	"_id": 9,
+	"profileId": "PRF009",
+	"maskedName": "PAVPRF002",
+	"photo": "http://2.bp.blogspot.com/-YytBQ-VwmQc/VYGjnsxx_yI/AAAAAAAAA04/uncM-5p5MbI/s100-c/board-761586_1280.jpg",
+	"age": "25",
+	"specialization": "ENT",
+	"department": "Cardio",
+	"designation": "Sr. Ward Attendent",
+	"salary": "25000",
+	"experience": "2.2",
+	"location": "Bangalore",
+	"postedDate": "ddMMyyyyTHHmmss",
+	"readyToJobChange": "0",
+	"phone": "9916333333",
+	"examsDetails": [{
+		"examName": "IELTS",
+		"yearOfPassing": "2015",
+		"result": "7"
+	}]
+}, {
+	"_id": 10,
+	"profileId": "PRF0010",
+	"maskedName": "NIKPRF0010",
+	"photo": "http://3.bp.blogspot.com/-bTWNRjookMQ/VYGjnv5nKtI/AAAAAAAAA08/wXshQ9sNDeU/s100-c/blank-792125_1280.jpg",
+	"age": "25",
+	"specialization": "ENT",
+	"department": "Cardio",
+	"designation": "Sr. Ward Attendent",
+	"salary": "25000",
+	"experience": "2.7",
+	"location": "Karnataka",
+	"postedDate": "ddMMyyyyTHHmmss",
+	"readyToJobChange": "1",
+	"phone": "9916243214",
+	"examsDetails": [{
+		"examName": "IELTS",
+		"yearOfPassing": "2015",
+		"result": "7"
+	}]
+}, {
+	"_id": 11,
+	"profileId": "PRF002",
+	"maskedName": "NIRPRF002",
+	"photo": "http://3.bp.blogspot.com/-bTWNRjookMQ/VYGjnv5nKtI/AAAAAAAAA08/wXshQ9sNDeU/s100-c/blank-792125_1280.jpg",
+	"age": "25",
+	"specialization": "Ortho",
+	"department": "Cardio",
+	"designation": "Sr. Ward Attendent",
+	"salary": "25000",
+	"experience": "4.6",
+	"location": "Bangalore",
+	"postedDate": "ddMMyyyyTHHmmss",
+	"readyToJobChange": "1",
+	"phone": "9916242321",
+	"examsDetails": [{
+		"examName": "IELTS",
+		"yearOfPassing": "2015",
+		"result": "7"
+	}]
+}, {
+	"_id": 12,
+	"profileId": "PRF0012",
+	"maskedName": "NIKPRF0012",
+	"photo": "http://3.bp.blogspot.com/-bTWNRjookMQ/VYGjnv5nKtI/AAAAAAAAA08/wXshQ9sNDeU/s100-c/blank-792125_1280.jpg",
+	"age": "25",
+	"specialization": "ENT",
+	"department": "Cardio",
+	"designation": "Sr. Ward Attendent",
+	"salary": "25000",
+	"experience": "3.2",
+	"location": "Mangalore",
+	"postedDate": "ddMMyyyyTHHmmss",
+	"readyToJobChange": "0",
+	"phone": "9916222333",
+	"examsDetails": [{
+		"examName": "IELTS",
+		"yearOfPassing": "2015",
+		"result": "7"
+	}]
+}]

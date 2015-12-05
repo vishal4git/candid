@@ -1,11 +1,15 @@
-<ion-view view-title="Dashboard">
-    <ion-content class="post-content" padding="10">
+<ion-view view-title="Dashboard" >
+    <ion-content class="post-content" padding="10" >
+
         <div class="card">
             <div class="item item-divider item-energized">
                 Header Text - 1
             </div>
             <div class="item item-text-wrap">
-                Content Text / Image Goes Here
+               <button ng-click="download();" class="button button-block button-candid">Download</button>
+                <button ng-click="load();" class="button button-block button-candid">Load</button>
+                {{imgFile}}
+                <img ng-src="{{imgFile}}"/>
             </div>
             <div class="item item-divider item-energized">
                 Footer Text - 1
