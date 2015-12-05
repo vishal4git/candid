@@ -1,0 +1,119 @@
+<style type="text/css">
+    #profile-info {
+        background-image: url(http://i12.photobucket.com/albums/a240/candid4world/candid/repository/common/nursing_760x400_zpsthjwaxrf.jpg);
+    }
+</style>
+<ion-view view-title="{{item.profileDetails.candidate.firstName}}'s Profile">
+   <ion-content has-header="true">
+      <div id="content" >
+        <div id="profile-info">
+          <img id="profile-image" src="{{item.profileDetails.photo}}">
+          <h3 id="profile-name">{{item.profileDetails.candidate.firstName}} {{item.profileDetails.candidate.lastName}}</h3>
+          
+        </div>
+      </div>
+      <div class="list">
+      	
+        <a class="item">
+          <h2>First Name:	<strong>{{item.profileDetails.candidate.firstName}}</strong></h2>
+        </a>
+		  
+		<a class="item">
+          <h2>Last Name:	<strong>{{item.profileDetails.candidate.middleName}}</strong></h2>
+        </a>
+		  
+		<a class="item">
+          <h2>Last Name:	<strong>{{item.profileDetails.candidate.lastName}}</strong></h2>
+        </a>
+		  
+		<div ng-if="item.profileDetails.candidate.gender=='0'">
+			<a class="item">
+          		<h2>Gender:	<strong>Male</strong></h2>
+        	</a>
+		</div>
+		  
+        <div ng-if="item.profileDetails.candidate.gender=='1'">
+			<a class="item">
+          		<h2>Gender:	<strong>Female</strong></h2>
+        	</a>
+		</div>
+		  
+		<a class="item">
+          <h2>Age:	<strong>{{item.profileDetails.candidate.age}}</strong></h2>
+        </a>
+		  
+		<a class="item">
+          <h2>Specialization:	<strong>{{item.profileDetails.candidate.specialization}}</strong></h2>
+        </a>
+		
+		<a class="item">
+          <h2>Current Location:	<strong>{{item.profileDetails.candidate.currentLocation}}</strong></h2>
+        </a>
+		  
+		<a class="item">
+          <h2>Experience:	<strong>{{item.profileDetails.candidate.experience}} Years</strong></h2>
+        </a>
+		  
+		<a class="item item-icon-left">
+          <i class="icon ion-email" style="font-size: 200%"></i><strong>{{item.profileDetails.candidate.email}}</strong>
+        </a>
+		  
+		<a class="item item-icon-left" href="tel:{{item.profileDetails.candidate.phone}}">
+          <h2><i class="icon ion-ios-telephone" style="font-size: 200%"></i><strong>{{item.profileDetails.candidate.phone}}</strong></h2>
+        </a>
+		  
+		<a class="item">
+          <h2>Current Employer:	<strong>{{item.profileDetails.employmentDetails.employerName}}</strong></h2>
+        </a>
+		 
+		<a class="item">
+          <h2>From Date:	<strong>{{item.profileDetails.employmentDetails.from}}</strong></h2>
+        </a>
+		  
+		<a class="item">
+          <h2>To Date:	<strong>{{item.profileDetails.employmentDetails.to}}</strong></h2>
+        </a>
+		  
+		<a class="item">
+          <h2>Designation:	<strong>{{item.profileDetails.employmentDetails.designation}}</strong></h2>
+        </a>
+		  
+		<a class="item">
+          <h2>Department:	<strong>{{item.profileDetails.employmentDetails.department}}</strong></h2>
+        </a>
+		  	  
+		<a class="item">
+          <h2>Highest Degree:	<strong>{{item.profileDetails.education.degree}}</strong></h2>
+        </a>
+		  
+		<a class="item">
+          <h2>University:	<strong>{{item.profileDetails.education.university}}</strong></h2>
+        </a>
+		  
+		<a class="item">
+          <h2>Institute Name:	<strong>{{item.profileDetails.education.instituteName}}</strong></h2>
+        </a>
+		  
+		<a class="item">
+          <h2>Year of Passing:	<strong>{{item.profileDetails.education.yearOfPassing}}</strong></h2>
+        </a>
+		
+		<a class="item">
+          <h2>Percentage Achieved:	<strong>{{item.profileDetails.education.percentage}}</strong></h2>
+        </a>
+		  
+		<a class="item">
+          <h2>City:	<strong>{{item.profileDetails.candidate.city}}</strong></h2>
+        </a>
+		  
+		<a class="item">
+          <h2>State:	<strong>{{item.profileDetails.candidate.state}}</strong></h2>
+        </a>
+		  
+		<a class="item">
+          <h2>Pincode:	<strong>{{item.profileDetails.candidate.pinCode}}</strong></h2>
+        </a>       
+      </div>
+    </ion-content>
+   
+</ion-view>

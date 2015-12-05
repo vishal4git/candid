@@ -1,0 +1,137 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+    <link href="css/styleSlide.css" rel="stylesheet">
+    <ion-nav-bar class="bar-stable bar-assertive">
+        <ion-nav-back-button class="button-clear">
+            <img ng-src="img/logo.png" class="nav-logo"/>
+        </ion-nav-back-button>
+		
+		<ion-nav-buttons side="right">
+			<!--<button class="ion-ios-bell button-clear" style="font-size: 200%" ng-click="openModal();"></button>
+			<button class="ion-ios-bell button-clear"></button>-->
+            <i class="icon ion-ios-bell header-icon" style="font-size: 200%" ng-click="openModal();"></i>
+            <i class="icon ion-ios-paper header-icon" style="font-size: 200%" ng-click="openModal();"></i>
+            <i class="icon ion-ios-search header-icon" style="font-size: 200%" ng-click="openModal();"></i>
+            <a href="#/app/login" class="icon ion-ios-redo header-icon" style="font-size: 200%; color: #ffffff;" ></a>
+    	</ion-nav-buttons>
+    </ion-nav-bar>
+
+    <!--<ion-content direction="y" scrollbar-y="false">
+        <ion-refresher pulling-icon="ion-arrow-down-b" on-refresh="refreshItems()"></ion-refresher>
+        <ion-list>
+            <ion-item collection-repeat="item in items" >
+                <p>{{item.text}}</p>
+            </ion-item>
+        </ion-list>
+        <div ng-if="items !== undefined && !items.length" class="no-results">
+            <p>No Results</p>
+        </div>
+    </ion-content>-->
+
+    <!--<ion-tabs class="tabs-icon-top tabs-color-active-positive">-->
+    <ion-tabs class="tabs-striped tabs-color-assertive slide-left-right tabs-apply-shadow">
+        <!-- Dashboard Tab -->
+        <ion-tab title="Dashboard" icon-off="ion-ios-home" icon-on="ion-ios-home" href="#/home/dash" >
+            <ion-nav-view class="slide-left-right" name="tab-dash" nav-direction="forward"></ion-nav-view>
+        </ion-tab>
+
+        <!-- Nurse Tab -->
+        <ion-tab title="Nurse" icon-off="ion-ios-people" icon-on="ion-ios-people" href="#/home/nurse">   
+            <ion-nav-view class="slide-left-right" name="tab-nurse" nav-direction="forward"></ion-nav-view>
+        </ion-tab>
+
+        <!-- Wall Post Tab -->
+        <ion-tab title="Wall Post" icon-off="ion-easel" icon-on="ion-easel" href="#/home/wall">
+            <ion-nav-view class="slide-left-right" name="tab-wall" nav-direction="forward"></ion-nav-view>
+        </ion-tab>
+        
+        <!-- My Profile Tab -->
+        <ion-tab title="My Profile" icon-off="ion-person" icon-on="ion-person" href="#/home/profile">
+            <ion-nav-view class="slide-left-right" name="tab-profile" nav-direction="forward"></ion-nav-view>
+        </ion-tab>
+        
+        <!-- Exam Tab -->
+        <ion-tab title="Exams" icon-off="ion-clipboard" icon-on="ion-clipboard" href="#/home/exams">
+            <ion-nav-view class="slide-left-right" name="tab-exams" nav-direction="forward"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+
+    <script id="alerts-modal.html" type="text/ng-template">
+        <style type="text/css">
+            .reset-modal {
+                top: 2%;
+                left: 2%;
+                min-height: 96%;
+                width: 96%;
+            }
+            
+            #l1-nav a, #l1-nav a:visited {
+                color: #444;
+                text-decoration: none;
+            }
+            #l1-nav {
+                padding-top: 23px;
+            }
+            #l1-nav li a {
+                line-height: normal;
+                display: inline-block;
+                vertical-align: center;
+                background-color: #f0f0f0;
+                padding: 6px 25px 10px 25px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                /* margin-top: 3px; */
+                text-decoration: none;
+                border-top: 1px solid #ebebeb;
+                border-left: 1px solid #ebebeb;
+                border-right: 1px solid #ebebeb;
+                background: -o-linear-gradient(top,#fff 10%,#bbb 100%);
+                background: -ms-linear-gradient(top,#fff 10%,#bbb 100%);
+                background: -moz-linear-gradient(top,#fff 10%,#bbb 100%);
+                background: -webkit-linear-gradient(top,#fff 10%,#bbb 100%);
+                background: linear-gradient(top,#fff 10%,#bbb 100%);
+                text-shadow: 0 1px #FFF;
+            }
+            ul, menu, dir {
+                display: block;
+                list-style-type: disc;
+                -webkit-margin-before: 1em;
+                -webkit-margin-after: 1em;
+                -webkit-margin-start: 0px;
+                -webkit-margin-end: 0px;
+                -webkit-padding-start: 40px;
+            }
+            #l1-nav li {
+                font-size: 85%;
+                display: inline-block;
+                list-style-type: none;
+                background-color: #fff;
+                margin-right: 1px;
+            }
+        </style>
+        <ion-modal-view class="grey_bg reset-modal">
+            <ion-nav-bar class="bar-assertive">
+                <ion-nav-title>
+                    Add Comment
+                </ion-nav-title>
+                <ion-nav-buttons side="right">
+                    <button class="button button-icon button-clear ion-close-round" ng-click="closeModal()"></button>
+                </ion-nav-buttons>
+            </ion-nav-bar>
+            <ion-content class="has-header" padding="10">
+                
+               <!-- <ul id="l1-nav">
+                    <li>
+                        <a href="#">Notifications</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Alerts</a>
+                    </li>
+                </ul> -->
+                
+            </ion-content>
+        </ion-modal-view>
+    </script>

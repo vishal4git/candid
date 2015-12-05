@@ -1,0 +1,59 @@
+<ion-view view-title="Nurse">
+	<ion-header-bar align-title="left" class="bar-positive bar-subheader">
+		<ion-buttons side="secondary">
+			<button class="button button-icon icon ion-ios-search-strong" ng-click="showFilterBar()"></button>
+		</ion-buttons>
+	</ion-header-bar>
+	<ion-content class="post-content">
+		<ion-refresher
+			pulling-text="Pull to refresh..."
+			on-refresh="doRefresh()">
+		</ion-refresher>
+		<div class="list card">
+			<a class="item item-avatar candidate-list-item" style="padding-left: 15px;" ng-repeat="item in items" href="#/home/nurse-details/{{item._id}}">
+					<img ng-src="{{item.photo}}" style="max-width: 70px; max-height: 70px;"></img>
+					<div class="inline" style="padding-left: 80px; max-width: 210px;">
+						<h2><strong>{{item.maskedName}}</strong></h2>
+					</div>
+					<div class="inline" style="float: right; max-width: 110px;">
+                        <h2>Age : 28 Years</h2>
+					</div>
+            
+                    <div style="padding-left: 80px; max-width: 350px;">
+                        <h2><span style="color:grey">Experience.: </span>{{item.experience}}.11</h2>
+                        <h2><span style="color:grey">Specialization: </span>{{item.specialization}}</h2>
+                        <h2><span style="color:grey">Location: </span>{{item.location}}</h2>
+                        <h2><span style="color:grey">Designation.: </span>Sr. Ward Atten.</h2>
+                        <h2><span style="color:grey">Department : </span>{{item.specialization}}</h2>
+                        <h2><span style="color:grey">Salary Drawn : </span>25000.00</h2>
+                        <div ng-if="item.readyToJobChange=='0'">
+                            <h2><span style="color:grey">Looking for Job Change : </span>Yes</h2></div>
+                        <div ng-if="item.readyToJobChange=='1'">
+                            <h2><span style="color:grey">Looking for Job Change : </span>Yes</h2></div>
+                        <h2><span style="color:grey">Tests Attended : </span>IELTS</h2>
+                    </div>
+
+                    <div style="padding-top: 25px; padding-left: 10px;">
+                        <h2 style="font-size: 14px; color: grey">Last updated : Nov 28, 2015 at 11:25 AM</h2>
+                    </div>
+                    <!--<div class="item item-divider">
+                        <div class="inline" style="font-size: 200%; padding-top: 15px; width: 15%; z-index: 10;">
+                            <h2><strong>Call</strong>  <i class="icon ion-ios-telephone"></i></h2>
+                        </div>
+                        <div class="inline" style="padding-top: 15px; width: 20%">
+                            <h2><strong>Offer</strong>  <i class="icon ion-ios-paper" style=""></i></h2>
+                        </div>
+                        <div class="inline" style="float: right; padding-top: 15px">
+                            <h2><strong>Posted On:</strong> 15 Days Ago</h2>
+                        </div>
+                    </div> -->
+            
+			</a>
+		</div>
+		<ion-infinite-scroll
+			ng-if="postsCompleted == false"
+			on-infinite="getPosts()"
+			distance="10%">
+		</ion-infinite-scroll>
+	</ion-content>
+</ion-view>
