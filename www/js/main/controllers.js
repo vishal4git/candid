@@ -528,11 +528,129 @@ app.controller('ForgotCtrl', ['$scope', function($scope) {
     $ionicViewSwitcher.nextDirection('back');
 }])*/
 
-app.controller('NurseCtrl', ['$scope', '$timeout', '$ionicFilterBar', '$ionicViewSwitcher', 'Nurse', function($scope, $timeout, $ionicFilterBar, $ionicViewSwitcher, Nurse) {
+app.controller('DashCtrl', ['$scope', '$ionicLoading', '$ionicViewSwitcher', '$ionicTabsDelegate', function($scope, $ionicLoading, $ionicViewSwitcher, $ionicTabsDelegate){
+    
+    $ionicViewSwitcher.nextDirection('back');
+    
+    $scope.goForward = function () {
+        var selected = $ionicTabsDelegate.selectedIndex();
+        if (selected != -1) {
+            $ionicTabsDelegate.select(selected + 1);
+        }
+    }
+
+    $scope.goBack = function () {
+        var selected = $ionicTabsDelegate.selectedIndex();
+        if (selected != -1 && selected != 0) {
+            $ionicTabsDelegate.select(selected - 1);
+        }
+    }
+    
+    $scope.download = function() {
+        $ionicLoading.show({
+            template: 'Loading...'
+        });
+        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fs) {
+            fs.root.getDirectory( 
+                "ExampleProject", 
+                { create: true }, 
+                function(dirEntry) {
+                    dirEntry.getFile(
+                        "test.png", 
+                        {
+                            create: true, 
+                            exclusive: false
+                        }, 
+                        function gotFileEntry(fe) {
+                            var p = fe.toURL();
+                            fe.remove();
+                            ft = new FileTransfer();
+                            ft.download(
+                                encodeURI("http://ionicframework.com/img/ionic-logo-blog.png"),
+                                p,
+                                function(entry) {
+                                    $ionicLoading.hide();
+                                    $scope.imgFile = entry.toURL();
+                                },
+                                function(error) {
+                                    $ionicLoading.hide();
+                                    alert("Download Error Source -> " + error.source);
+                                },
+                                false,
+                                null
+                            );
+                        }, 
+                        function() {
+                            $ionicLoading.hide();
+                            console.log("Get file failed");
+                        }
+                    );
+                }
+            );
+        },
+        function() {
+            $ionicLoading.hide();
+            console.log("Request for filesystem failed");
+        });
+    }
+    
+    $scope.load = function() {
+        $ionicLoading.show({
+            template: 'Loading...'
+        });
+        
+        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fs) {
+            fs.root.getDirectory(
+            "ExampleProject",
+            {
+                create: false
+            },
+            function(dirEntry) {
+                dirEntry.getFile(
+                    "test.png", 
+                    {
+                        create: false, 
+                        exclusive: false
+                    }, 
+                    function gotFileEntry(fe) {
+                        $ionicLoading.hide();
+                        $scope.imgFile = fe.toURL();
+                    }, 
+                    function(error) {
+                        $ionicLoading.hide();
+                        console.log("Error getting file");
+                    }
+                );
+            }
+        );
+    },
+    function() {
+        $ionicLoading.hide();
+        console.log("Error requesting filesystem");
+    });
+}
+}])
+
+app.controller('NurseCtrl', ['$scope', '$timeout', '$ionicFilterBar', '$ionicViewSwitcher', '$ionicTabsDelegate', 'Nurse', function($scope, $timeout, $ionicFilterBar, $ionicViewSwitcher, $ionicTabsDelegate, Nurse) {
 	$scope.items = [];
 	$scope.times = 0 ;
 	$scope.postsCompleted = false;
     $ionicViewSwitcher.nextDirection('back');
+    
+    $scope.goForward = function () {
+        var selected = $ionicTabsDelegate.selectedIndex();
+        if (selected != -1) {
+            $ionicTabsDelegate.select(selected + 1);
+        }
+    }
+
+    $scope.goBack = function () {
+        var selected = $ionicTabsDelegate.selectedIndex();
+        if (selected != -1 && selected != 0) {
+            $ionicTabsDelegate.select(selected - 1);
+        }
+    }
+    
 	// load more content function
 	$scope.getPosts = function(){
 		Nurse.getNurse()
@@ -747,96 +865,6 @@ app.controller('HomeCtrl', ['$scope', 'Comments', '$ionicModal', '$ionicViewSwit
 }])
 
 
-/*app.controller('DashCtrl', ['$scope', '$ionicViewSwitcher', function($scope, $ionicViewSwitcher){
-    $ionicViewSwitcher.nextDirection('back');
-}])*/
 
-app.controller('DashCtrl', ['$scope', '$ionicLoading', '$ionicViewSwitcher', function($scope, $ionicLoading, $ionicViewSwitcher){
-    
-    $ionicViewSwitcher.nextDirection('back');
-    
-    $scope.download = function() {
-        $ionicLoading.show({
-            template: 'Loading...'
-        });
-        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fs) {
-            fs.root.getDirectory( 
-                "ExampleProject", 
-                { create: true }, 
-                function(dirEntry) {
-                    dirEntry.getFile(
-                        "test.png", 
-                        {
-                            create: true, 
-                            exclusive: false
-                        }, 
-                        function gotFileEntry(fe) {
-                            var p = fe.toURL();
-                            fe.remove();
-                            ft = new FileTransfer();
-                            ft.download(
-                                encodeURI("http://ionicframework.com/img/ionic-logo-blog.png"),
-                                p,
-                                function(entry) {
-                                    $ionicLoading.hide();
-                                    $scope.imgFile = entry.toURL();
-                                },
-                                function(error) {
-                                    $ionicLoading.hide();
-                                    alert("Download Error Source -> " + error.source);
-                                },
-                                false,
-                                null
-                            );
-                        }, 
-                        function() {
-                            $ionicLoading.hide();
-                            console.log("Get file failed");
-                        }
-                    );
-                }
-            );
-        },
-        function() {
-            $ionicLoading.hide();
-            console.log("Request for filesystem failed");
-        });
-    }
-    
-    $scope.load = function() {
-        $ionicLoading.show({
-            template: 'Loading...'
-        });
-        
-        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fs) {
-            fs.root.getDirectory(
-            "ExampleProject",
-            {
-                create: false
-            },
-            function(dirEntry) {
-                dirEntry.getFile(
-                    "test.png", 
-                    {
-                        create: false, 
-                        exclusive: false
-                    }, 
-                    function gotFileEntry(fe) {
-                        $ionicLoading.hide();
-                        $scope.imgFile = fe.toURL();
-                    }, 
-                    function(error) {
-                        $ionicLoading.hide();
-                        console.log("Error getting file");
-                    }
-                );
-            }
-        );
-    },
-    function() {
-        $ionicLoading.hide();
-        console.log("Error requesting filesystem");
-    });
-}
-}])
+
 

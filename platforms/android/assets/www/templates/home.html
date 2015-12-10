@@ -59,6 +59,7 @@ navigation history that also transitions its views in and out.
         </ion-tab>
     </ion-tabs>
 
+    <!--
     <script id="alerts-modal.html" type="text/ng-template">
         <ion-modal-view class="grey_bg reset-modal">
             <ion-nav-bar class="bar-assertive">
@@ -71,15 +72,151 @@ navigation history that also transitions its views in and out.
             </ion-nav-bar>
             <ion-content class="has-header" padding="10">
                 
-               <!-- <ul id="l1-nav">
+                <button class="button button-full button-energized" ng-click="closeModal()">Done</button>
+                
+                <ul id="l1-nav">
                     <li>
                         <a href="#">Notifications</a>
                     </li>
                     <li class="active">
                         <a href="#">Alerts</a>
                     </li>
-                </ul> -->
+                </ul>
                 
             </ion-content>
         </ion-modal-view>
     </script>
+    -->
+
+    <script id="alerts-modal.html" type="text/ng-template">
+        <style type="text/css">
+            .bar-candid-premium {
+                background-image: linear-gradient(to bottom, #57B5E2 0%, #5C80B1 100%);
+                background-size: auto !important;
+                background-size: 100% 100% !important;
+                background-color: #fff;
+                color: #fff;
+            }
+            .ionic .col-price {
+                padding: 5px;
+                width: 100%;
+                border: 1px solid #ddd;
+                border-radius: 2px;
+                background: #f7f7f7;
+                text-align: center;
+            }
+            
+            .col-price {
+                -webkit-box-flex: 1;
+                -webkit-flex: 1;
+                -moz-box-flex: 1;
+                -moz-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                display: block;
+                padding: 5px;
+                width: 100%;
+                
+                margin: 5px;
+                border: 1px solid #ddd;
+                border-radius: 2px;
+                background: #f7f7f7;
+                text-align: center;
+            }
+            
+            .tabs-price {
+                height: 80px;
+            }
+            
+            .tab-item-price{
+                font-size: 18px !important;
+            }
+            .item-price-text {
+                font-size: 14px !important;
+            }
+            
+            .go-premium-text {
+                display: table;
+                margin: 0 auto;
+            }
+            
+            .item-wordwrap p {
+                white-space: normal !important;
+            }
+            
+            .item-wordwrap h2 {
+                white-space: normal !important;
+            }
+            .premium-header {
+                padding: 10px;
+            }
+            
+            .premium-points {
+                position: absolute;
+                top: 10px;
+                left: 20px;
+                max-width: 80px;
+                max-height: 80px;
+                width: 100%;
+                height: 100%;
+                font-size: 500% !important;
+            }
+            .center-align {
+                text-align: center !important;
+                vertical-align: middle !important;
+            }
+
+        </style>
+        <ion-modal-view>
+            <!--<ion-header-bar class="bar-stable bar-candid">-->
+            <ion-header-bar class="bar-stable bar-candid bar bar-header">
+                <h1 class="title">Go Premium</h1>
+                <a class="button button-icon icon ion-ios-close" style="color: #fff;" ng-click="closeModal();"></a>
+                <!--<button class="button icon ion-ios-close header-icon"></button>-->
+                <!--<ion-buttons side="right">
+                    <i class="icon ion-ios-close header-icon" style="font-size: 200%" ng-click="closeModal();"></i>
+                </ion-buttons>-->
+            </ion-header-bar>
+            <ion-content>
+                <div class="list card stable-bg">
+                    <div class="item item-body go-premium-text center-align"> 
+                        <i class="icon ion-ribbon-b" style="font-size: 400%"></i><br/>
+                        GET THE MOST OUT OF CANDID WITH PREMIUM
+                        <p>Choose from a monthly or yearly subscription.</p> 
+                    </div> 
+                    <div class="item tabs tabs-secondary tabs-icon-left tabs-price"> 
+                        <div class="row">
+                            <div class="col-price">
+                                <a class="tab-item tab-item-price" data-ink-color="#336699" data-ink-opacity="0.5"> 
+                                    <i class="icon ion-social-usd"></i> 
+                                    4.99 <span class="item-price-text">Monthly</span></a> 
+                            </div>
+                            <div class="col-price">
+                                <a class="tab-item tab-item-price" data-ink-color="#336699" data-ink-opacity="0.5"> 
+                                    <i class="icon ion-social-usd"></i> 
+                                    44.99 <span class="item-price-text">Yearly</span></a> 
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="premium-header">
+                    BENEFITS OF PREMIUM
+                </div>
+                <div class="list"> 
+                    <a class="item item-thumbnail-left item-wordwrap"> 
+                        <h2 class="premium-points"><i class="icon ion-ribbon-a"></i></h2> 
+                        <h2>Full Access to the Candidate Profiles</h2> 
+                        <p>Get the contact number and email ids through which you can contact desired candidates</p> </a> 
+                    <a class="item item-thumbnail-left item-wordwrap"> 
+                        <h2 class="premium-points"><i class="icon ion-lock-combination"></i></h2>  
+                        <h2>Additional Mobile Security</h2> 
+                        <p>Add a passcode lock to the Candid app on your phone and tablet</p> </a> 
+                    <a class="item item-thumbnail-left item-wordwrap"> 
+                        <h2 class="premium-points"><i class="icon ion-quote"></i></h2> 
+                        <h2>Get Great Offers</h2> 
+                        <p>You can be eligible for the timely offers published by the Candid</p> </a> 
+                </div>
+                
+            </ion-content>
+        </ion-modal-view>
+</script>

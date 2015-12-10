@@ -15,8 +15,8 @@
 	"phone": "8123151567",
 	"examsDetails": [{
 		"examName": "IELTS",
-		"yearOfPassing": "2015",
-		"result": "7"
+		"yearOfPassing": "2014",
+		"result": "6.5"
 	}]
 }, {
 	"_id": 2,
@@ -34,9 +34,9 @@
 	"readyToJobChange": "1",
 	"phone": "9916242412",
 	"examsDetails": [{
-		"examName": "IELTS",
-		"yearOfPassing": "2015",
-		"result": "7"
+		"examName": "GRE",
+		"yearOfPassing": "2013",
+		"result": "7.5"
 	}]
 }, {
 	"_id": 3,
@@ -75,8 +75,8 @@
 	"phone": "9916242412",
 	"examsDetails": [{
 		"examName": "IELTS",
-		"yearOfPassing": "2015",
-		"result": "7"
+		"yearOfPassing": "2014",
+		"result": "8.5"
 	}]
 }, {
 	"_id": 5,
@@ -196,7 +196,7 @@
 	"examsDetails": [{
 		"examName": "IELTS",
 		"yearOfPassing": "2015",
-		"result": "7"
+		"result": "6"
 	}]
 }, {
 	"_id": 11,
@@ -215,7 +215,7 @@
 	"phone": "9916242321",
 	"examsDetails": [{
 		"examName": "IELTS",
-		"yearOfPassing": "2015",
+		"yearOfPassing": "2014",
 		"result": "7"
 	}]
 }, {
@@ -235,7 +235,7 @@
 	"phone": "9916222333",
 	"examsDetails": [{
 		"examName": "IELTS",
-		"yearOfPassing": "2015",
-		"result": "7"
+		"yearOfPassing": "2014",
+		"result": "9"
 	}]
 }]

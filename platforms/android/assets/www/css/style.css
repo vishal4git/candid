@@ -372,7 +372,7 @@ img.profile-pic {
     /** **/
     border-color: #909090 !important;
     background-color: #DFDFE6; 
-    background-image: linear-gradient(to bottom, #D8DDE4 0px, #84ADE6 100%);
+    background-image: linear-gradient(to bottom, #66CCD6 0px, #84ADE6 100%);
     /** border-color: $themeColor !important;
     background-color: $themeColor;**/
 }
@@ -473,6 +473,14 @@ img.profile-pic {
 }
 
 /** Custom CSS written by me **/
+.button.button-assertive.button-clear {
+    border-color: transparent;
+    background: 0 0;
+    box-shadow: none;
+    color: #4b8ce9;
+}
+
+/** Custom CSS written by me **/
 .login-fields {
     opacity: 0.4;
     filter: alpha(opacity=40);
@@ -498,6 +506,16 @@ img.profile-pic {
     min-height: 96%;
     width: 96%;
     */
+}
+
+#modal-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 /** Custom CSS written by me **/
